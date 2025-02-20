@@ -11,21 +11,11 @@ function ExecuteScript(strId)
   }
 }
 
-window.InitExecuteScripts = function()
-{
-var player = GetPlayer();
-var object = player.object;
-var addToTimeline = player.addToTimeline;
-var setVar = player.SetVar;
-var getVar = player.GetVar;
-
-
 window.Script1  =function() {
    window.setFname.postMessage('');
    window.setLname.postMessage('');
    window.setCurrentScore.postMessage('');
 }
-
 
 window.Script3 = function()
 {
@@ -35,4 +25,3 @@ window.Script3 = function()
   window.setScore.postMessage(score);
  window.setGroupScore.postMessage(groupScore);
 }
-};
